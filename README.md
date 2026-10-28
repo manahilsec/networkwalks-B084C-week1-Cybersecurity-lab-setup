@@ -172,7 +172,7 @@ DNS: 8.8.8.8
 
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
 
-![](4-screenshot-kali-network-settings.png)
+![](4-screenshot-kali-network-setting-1.png)
 
 ---
 
@@ -185,6 +185,7 @@ Example snapshot name:
 ```text
 Clean Kali - Network Setup
 ```
+![](5-screenshot-snapshot.png)
 
 The snapshot represents the clean baseline of the laboratory.
 
@@ -232,10 +233,11 @@ One workaround used during this lab was:
 ```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
 ```
+![](6-screenshot-kali-network-configuration.png)
 
 The network connection was then restarted/rebooted and connectivity was tested again.
 
-> **Important:** Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an `nmcli` command.Because i have kali linux version 2026.3 so i sort my network problem by using
+> **Important:** Network interface and connection names may differ between systems. Students should first identify their actual connection name before running an `nmcli` command. Because  i have kali linux version 2026.3 then i handle my network problem by using
 method
 
 ---
